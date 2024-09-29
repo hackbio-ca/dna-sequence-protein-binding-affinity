@@ -10,7 +10,7 @@ Design a model that produces the closest mouse brain-cell type match given an RN
 
 
 ## Background
-mRNA is the most crucial aspect of any protein synthesis - after being transcribed from DNA with a myriad of enzymes, the same RNA sequence can code for multiple proteins. Given that one RNA code for many proteins, how do we know which one to select? Our project takes a computational approach towards predicting the closest cell type match given an RNA sequence. While the selection of RNA to produce a protein happens with a mixture of multiple enzymes that involve codon usage (i.e tRNA adaptation, mRNA secondary structure, untranslated regions (UTRs), etc.) under physiological conditions, we utilize AI to perform these predictions on a computation level. Using the randomForestRegressor model in Scikit Learn, our program trains the model on single-nucleus RNA sequencing data in mice brains ([Langlieb _et al._, 2023](https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/36945580/&sa=D&source=docs&ust=1727629784546695&usg=AOvVaw3Kkx8Eat2nMI4SE3Nr84OU), and uses this data to predict the level of expression of a random input RNA in each cell type. 
+mRNA is the most crucial aspect of any protein synthesis - after being transcribed from DNA with a myriad of enzymes, the same RNA sequence can code for multiple proteins. Given that one RNA code for many proteins, how do we know which one to select? Our project takes a computational approach towards predicting the closest cell type match given an RNA sequence. While the selection of RNA to produce a protein happens with a mixture of multiple enzymes that involve codon usage (i.e tRNA adaptation, mRNA secondary structure, untranslated regions (UTRs), etc.) under physiological conditions, we utilize AI to perform these predictions on a computation level. Using the randomForestRegressor model in Scikit Learn, our program trains the model on single-nucleus RNA sequencing data in mice brains ([Langlieb _et al._, 2023](https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/36945580/&sa=D&source=docs&ust=1727629784546695&usg=AOvVaw3Kkx8Eat2nMI4SE3Nr84OU)), and uses this data to predict the level of expression of a random input RNA in each cell type. 
 
 ## Workflow
 
@@ -30,7 +30,7 @@ Using the final data stored in the .csv, the randomForestRegressor model in Scik
 
 We developed a front-end terminal interface for users to interact with the model - when entered a random RNA sequence, the query would be sent to the trained model and an output of the predicted percentage expression in each cell type was received. To evaluate the accuracy of the model, we conducted a correlation between the predicted values and the actual values produced by the model.
 
-Check out our (Devpost) [https://devpost.com/submit-to/22491-toronto-bioinformatics-hackathon/manage/submissions/556398-predicting-mrna-expression-from-mrna-sequences/project_details/edit] link for more details on our submission for the Toronto Bioinformatics Hackathon 2024. 
+Check out our [Devpost](https://devpost.com/submit-to/22491-toronto-bioinformatics-hackathon/manage/submissions/556398-predicting-mrna-expression-from-mrna-sequences/project_details/edit) link for more details on our submission for the Toronto Bioinformatics Hackathon 2024. 
 
 
 ## Installation
