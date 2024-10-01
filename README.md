@@ -1,5 +1,7 @@
 # RNA-expression-from-sequences
 
+## 🥇 Winner of the First Place award!
+
 Design a model to predict RNA expression for mice brains from random RNA sequences using ENSEMBL GRCm39 mouse brain genome.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
